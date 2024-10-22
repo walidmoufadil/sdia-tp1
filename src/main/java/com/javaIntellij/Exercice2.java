@@ -3,6 +3,7 @@ package com.javaIntellij;
 import java.util.Scanner;
 
 public class Exercice2 {
+
     public static void main(String[] args) {
         String verbe = saisieVerbe();
         if(verifierverbe(verbe)){

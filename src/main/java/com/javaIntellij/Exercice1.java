@@ -19,8 +19,6 @@ public class Exercice1 {
         System.out.println("Veuillez saisir la notes");
         float note = sc.nextFloat();
         System.out.println("la note "+note+" est répetée "+nbElements(notes,note)+" fois");
-
-
     }
 
     public static void saisieNotes(float[] notes) {
