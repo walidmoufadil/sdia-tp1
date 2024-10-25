@@ -12,7 +12,7 @@ public class Exercice1 {
         float[] notes = new float[n];
         saisieNotes(notes);
         trier(notes);
-        printItems(notes);
+        afficherNotes(notes);
         System.out.println("la moyenne est : "+moyenne(notes));
         System.out.println("MAX :  "+ notes[noteMax(notes)]);
         System.out.println("MIN :  "+ notes[noteMin(notes)]);
@@ -37,7 +37,7 @@ public class Exercice1 {
         Arrays.sort(tab);
     }
 
-    public static void printItems(float[] tab){
+    public static void afficherNotes(float[] tab){
         for(float f : tab){
             System.out.println(f);
         }

@@ -71,10 +71,12 @@ public class Exercice3 {
     }
 
     public static String inverserChaine(String chaine){
+
         return new StringBuilder(chaine).reverse().toString();
     }
     public static int nbMots(String chaine){
-       return chaine.split(" ").length;
+
+        return chaine.split(" ").length;
     }
     public static void saisieCaractere(){
         Scanner sc = new Scanner(System.in);
