@@ -1,6 +1,6 @@
 **Compte rendu**
 
-***![](C:\Users\intel\Desktop\devoir1\Exercice1)***  
+***![](captures/Exercice1/Ex1-Ennoncé.png)***  
 *Introduction :*  
 Ce programme a pour objectif de permettre la gestion et l'affichage de notes d'étudiants. Il s'agit d'un ensemble de fonctions qui répond à plusieurs objectifs spécifiques :  
 *Saisie des notes* : L'utilisateur peut entrer une série de notes qui seront stockées dans un tableau.  
