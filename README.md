@@ -17,7 +17,7 @@ Ces opérations sont réparties en différentes fonctions afin de rendre le code
 *Description :*  
 Cette fonction permet de saisir les valeurs d'un tableau de nombres flottants (float\[\]) à partir de l'entrée utilisateur via la console.
 
- ![][image2]
+![](captures/Exercice1/saisie_notes.png)
 
 *Détails :*  
 La fonction demande à l'utilisateur de saisir une série de valeurs pour remplir le tableau de notes. Elle utilise un objet Scanner pour lire les entrées de l'utilisateur. La boucle for parcourt chaque indice du tableau, affiche un message invitant l'utilisateur à entrer une valeur, puis lit et stocke la valeur saisie dans l'élément correspondant du tableau.
@@ -30,8 +30,8 @@ La fonction modifie directement le tableau passé en paramètre, en remplissant 
 *Description :*  
 Cette fonction permet d'afficher les éléments d'un tableau de nombres à virgule flottante (type float\[\]) ligne par ligne dans la console.
 
-![][image3]  
-   
+![](captures/Exercice1/affiche_notes.png)
+
 *Détails :*  
 La fonction parcourt chaque élément du tableau tab en utilisant une boucle for-each et affiche chaque élément à l'aide de System.out.println(f), où f représente un élément du tableau.
 
@@ -43,7 +43,7 @@ Cette fonction ne retourne rien. Elle se contente d'afficher les éléments du t
 *Description :*  
 Cette fonction permet de trier un tableau de nombres à virgule flottante (type float\[\]) en ordre croissant.
 
- ![][image4]
+![](captures/Exercice1/trie_notes.png)
 
 *Détails :*  
 La fonction utilise la méthode Arrays.sort(tab) de la classe Arrays pour trier les éléments du tableau en ordre croissant. Cette méthode applique un algorithme de tri optimisé.
@@ -52,7 +52,7 @@ La fonction utilise la méthode Arrays.sort(tab) de la classe Arrays pour trier 
 
 Cette fonction permet de chercher dans un tableau de nombre à virgule flottante la valeur maximale(note maximale).
 
-![][image5] 
+![](captures/Exercice1/note_max.png)
 
 *Détails :*  
 La fonction noteMax itère dans le tableau des notes pour trouver la valeur maximale qui retourne son indice.  
@@ -62,8 +62,8 @@ On a choisi de retourner l'indice et non pas la valeur pour avoir plus de contr�
 **Fonction : noteMin**  
 La fonction noteMin permet de chercher la valeur minimale (note minimale) dans un tableau de nombre à virgule flottante.
 
-![][image6]  
-   
+![](captures/Exercice1/note_min.png)
+
 *Détails :*  
 Cette fonction prend en paramètre un tableau dans lequel elle permet d’itéré pour trouver la valeur minimale et retourner son indice.  
 *Remarque*:  
@@ -72,7 +72,7 @@ On a choisi de retourner l'indice et non pas la valeur pour avoir plus de contr�
 **Fonction : moyenne**  
 La fonction moyenne permet de trouver une moyenne par rapport à l'ensemble des éléments qui se trouve dans le tableau de nombre à virgule flottante.
 
-![][image7] 
+![](captures/Exercice1/moyenne_notes.png)
 
 *Détails :*  
 Cette fonction prend un tableau en paramètre qui  itère dessus pour appliquez la somme et retourner en dernier la moyenne.
@@ -83,18 +83,20 @@ On a choisi de retourner la moyenne et non pas de l'afficher pour pouvoir l'util
 **Fonction : nbElements**  
 La fonction nbElements permet de calculer les répétitions d'une valeur, saisie (ou entrer) par l'utilisateur, dans un tableau de nombre à virgule flottante.
 
-![][image8]  
-   
+![](captures/Exercice1/nombre_element.png)
+
 *Détails :*  
 Cette fonction prend comme paramètres un tableau et une note qu'on va chercher en itérant dans le tableau entré en premier paramètre. La fonction retourne le nombre de répétitions de cette valeur dans le tableau.
 
 **Fonction Principale : main**  
-La fonction main permet l'exécution des fonctions citées ci-dessus et suivre l'enchaînement de ces derniers.  
-   
-![][image9]
+La fonction main permet l'exécution des fonctions citées ci-dessus et suivre l'enchaînement de ces derniers.
+
+![](captures/Exercice1/main.png)
 
 *Exécution* :  
- ![][image10]
+![](captures/Exercice1/Ex1-exe1.png)
+![](captures/Exercice1/Ex1-exe2.png)
+
 
 ***![][image11]***  
 *Introduction* :  
