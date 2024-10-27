@@ -1,7 +1,9 @@
 # Projet bilingue
+## 🇫🇷 Français
+
 **Compte rendu**
 
-## 🇫🇷 Français
+
 ***![](captures/Exercice1/Ex1-Ennoncé.png)***  
 *Introduction :*  
 Ce programme a pour objectif de permettre la gestion et l'affichage de notes d'étudiants. Il s'agit d'un ensemble de fonctions qui répond à plusieurs objectifs spécifiques :  
@@ -288,4 +290,287 @@ Description : C'est la méthode principale du programme, qui orchestre l'exécut
 Elle appelle la fonction saisie() pour capturer la chaîne de caractères saisie par l'utilisateur.  
 Elle passe cette chaîne à la fonction nbOccurence() pour compter et afficher le nombre d'occurrences de chaque lettre dans le texte.  
 *Exécution* :  
+![](captures/Exercice4/Ex4-exe.png)
+
+
+🇬🇧 English
+Report
+
+
+Introduction:
+This program aims to manage and display students' grades. It consists of a set of functions that meet several specific objectives:
+Entering grades: The user can enter a series of grades that will be stored in an array.
+Sorting grades: The entered grades are then sorted in ascending order to facilitate their analysis.
+Displaying grades: Once sorted, the grades are displayed on the screen for the user to review.
+Displaying maximum and minimum grades: The program calculates and displays the extreme values (the highest and lowest grades).
+Calculating the average: Finally, a function calculates and displays the average of the entered grades.
+These operations are distributed across different functions to make the code clearer, modular, and reusable.
+
+All these functions are then gathered and called in a main function, which orchestrates the overall execution of the program. This allows each step to be handled separately while grouping them into a coherent process.
+
+Function: saisieNotes
+
+Description:
+This function allows entering values for an array of floating-point numbers (float[]) from user input via the console.
+
+![](captures/Exercice1/saisie_notes.png)
+
+Details:
+The function prompts the user to enter a series of values to fill the grades array. It uses a Scanner object to read user inputs. The for loop iterates through each index of the array, displays a message inviting the user to enter a value, and then reads and stores the entered value in the corresponding element of the array.
+
+Note:
+The function directly modifies the array passed as a parameter, filling its elements with the values entered by the user. It does not return any value.
+
+Function: afficherNotes
+
+Description:
+This function displays the elements of an array of floating-point numbers (type float[]) line by line in the console.
+
+![](captures/Exercice1/affiche_notes.png)
+
+Details:
+The function iterates through each element of the array tab using a for-each loop and displays each element using System.out.println(f), where f represents an element of the array.
+
+Note:
+This function does not return anything. It simply displays the elements of the array in the console.
+
+Function: trier
+
+Description:
+This function sorts an array of floating-point numbers (type float[]) in ascending order.
+
+![](captures/Exercice1/trie_notes.png)
+
+Details:
+The function uses the method Arrays.sort(tab) from the Arrays class to sort the elements of the array in ascending order. This method applies an optimized sorting algorithm.
+
+Function: noteMax
+
+This function searches for the maximum value (highest grade) in an array of floating-point numbers.
+
+![](captures/Exercice1/note_max.png)
+
+Details:
+The function noteMax iterates through the grades array to find the maximum value and returns its index.
+Note:
+We chose to return the index rather than the value to have more control over this value.
+
+Function: noteMin
+The noteMin function searches for the minimum value (lowest grade) in an array of floating-point numbers.
+
+![](captures/Exercice1/note_min.png)
+
+Details:
+This function takes an array as a parameter, allowing it to iterate to find the minimum value and return its index.
+Note:
+We chose to return the index rather than the value to have more control over this value.
+
+Function: moyenne
+The moyenne function calculates the average based on all elements in the array of floating-point numbers.
+
+![](captures/Exercice1/moyenne_notes.png)
+
+Details:
+This function takes an array as a parameter, iterates over it to compute the sum, and finally returns the average.
+
+Note:
+We chose to return the average rather than display it, so it can be used elsewhere (in the main function).
+
+Function: nbElements
+The nbElements function calculates the occurrences of a value entered by the user in an array of floating-point numbers.
+
+![](captures/Exercice1/nombre_element.png)
+
+Details:
+This function takes an array and a grade as parameters, which it searches for by iterating through the array passed as the first parameter. The function returns the number of occurrences of this value in the array.
+
+Main Function: main
+The main function executes the aforementioned functions and follows their sequence.
+
+![](captures/Exercice1/main.png)
+
+Execution:
+![](captures/Exercice1/Ex1-exe1.png)
+![](captures/Exercice1/Ex1-exe2.png)
+
+
+Introduction:
+This program aims to allow the automatic conjugation of first-group verbs in French. It consists of several functions that meet specific objectives:
+Entering a verb: The user is prompted to enter a first-group verb (a verb ending in "er").
+Verifying the verb: The program checks if the entered verb is indeed a first-group verb by ensuring it ends with "er".
+Conjugating the verb: If the verb is valid, it is conjugated in the present indicative for the different personal pronouns (Je, Tu, Il/Elle/On, Nous, Vous, Ils/Elles).
+These operations are implemented in various functions, making the code modular and easy to understand. The main function orchestrates all the steps, ensuring that the verb is first validated before being conjugated and displayed. This breakdown allows each part of the process to be handled distinctly while ensuring a coherent and smooth execution of the program.
+
+Function: saisieVerbe()
+
+Description: This function captures the input of a verb from the user.
+
+![](captures/Exercice2/Ex2-saisie_verbe.png)
+
+Details:
+It uses a Scanner to read the user's input from the console.
+It displays a message to the user asking them to enter a first-group verb.
+It returns the entered string (the verb).
+
+Function: verifierverbe(String verbe)
+
+Description: This function checks if the entered verb is indeed a first-group verb, meaning it ends with "er".
+
+![](captures/Exercice2/Ex2-verifier_verbe.png)
+
+Details:
+It retrieves the length of the verb with verbe.length().
+It uses substring() to extract the last two letters of the verb and checks if they correspond to "er".
+If the verb ends with "er", it returns true; otherwise, it returns false.
+
+Function: conjuguer(String verbe)
+
+Description: This function conjugates the given verb in the present indicative for the six personal pronouns (Je, Tu, Il/Elle/On, Nous, Vous, Ils/Elles).
+
+![](captures/Exercice2/Ex2-conjuguer_verbe.png)
+
+Details:
+It removes the last two letters "er" from the verb to obtain the stem using verbe.substring(0, verbe.length()-2).
+It concatenates this stem with the correct endings for each personal pronoun:
+"Je": stem + "e"
+"Tu": stem + "es"
+"Il/Elle/On": stem + "e"
+"Nous": stem + "ons"
+"Vous": stem + "ez"
+"Ils/Elles": stem + "ent"
+
+It then displays the conjugation for each pronoun using System.out.println().
+
+Main Function: main(String[] args)
+
+Description: This is the main method that executes the program. It prompts the user to enter a first-group verb (ending in "er"), checks that it is indeed a first-group verb, and conjugates it if so.
+
+![](captures/Exercice2/Ex2-main.png)
+
+Details:
+It calls the function saisieVerbe() to capture the user's input.
+Then, it uses the method verifierverbe() to check that the entered verb is indeed a first-group verb (ending with "er").
+If the verification is positive, it calls the method conjuguer() to display the conjugation of the entered verb.
+
+Execution:
+
+![](captures/Exercice2/Ex2-execution.png)
+
+**Introduction:
+This program aims to manage various operations on strings entered by the user. It allows interaction with the user through a menu and offers several functionalities around string manipulation, such as displaying, reversing, and counting the words in the string. It is designed modularly, with each functionality implemented in a distinct function, making the code clear and maintainable. The main functionalities are:
+Entering a string: The user can enter a string that will then be used for other operations.
+Displaying the string: Once the string is entered, it can be displayed using this option.
+Reversing the string: The program allows reversing the string and displaying the result.
+Counting words: The program can also count and display the number of words in the entered string.
+These operations are organized around a menu that allows the user to choose the operation they wish to execute. User interaction management is smooth, and the program always returns to the menu after each operation until the user decides to exit.
+
+Function: afficherMenu()
+
+Description: This function displays the menu of available options for the user.
+
+![](captures/Exercice3/Ex3-afficher_menu.png)
+
+Details:
+It displays a structured menu presenting the various operations that the user can perform: enter a string, display the string, reverse it, count words, or exit.
+
+Function: saisieChaine()
+
+Description: This function captures the input of a string from the user.
+
+![](captures/Exercice3/Ex3-saisie.png)
+
+
+Details:
+It utilizes a Scanner to read the user's input from the console and returns the entered string.
+
+Function: afficherChaine(String chaine)
+
+Description: This function displays the entered string.
+
+![](captures/Exercice3/Ex3-afficher_chaine.png)
+
+Details:
+It uses System.out.println(texte) to print the entered string in the console.
+
+Function: inverserChaine(String chaine)
+
+Description: This function reverses the entered string.
+
+![](captures/Exercice3/Ex3-inverser_chaine.png)
+
+Details:
+It uses a StringBuilder to reverse the string and returns the reversed string using texte.reverse().toString().
+Note:
+StringBuilder is mutable, making it easy to reverse the string.
+
+Function: compterMots(String chaine)
+
+Description: This function counts the number of words in the entered string.
+
+![](captures/Exercice3/Ex3-nombre_mots.png)
+Details:
+It splits the string into words using the split(" ") method.
+It counts the number of resulting elements to return the number of words.
+
+Main Function: main()
+
+Description: This function manages the flow of the program, displaying the menu and handling user choices.
+
+![](captures/Exercice3/Ex3-main.png)
+![](captures/Exercice3/Ex3-main_suite1.png)
+![](captures/Exercice3/Ex3-main_suite2.png)
+
+Details:
+It uses a loop to repeatedly display the menu until the user chooses to exit.
+It captures user input and calls the corresponding function based on the chosen option.
+
+Execution:
+![](captures/Exercice3/Ex3-exe1.png)
+![](captures/Exercice3/Ex3-exe2.png)
+![](captures/Exercice3/Ex3-exe3.png)
+
+Introduction:
+This program aims to count and display the number of occurrences of each letter of the alphabet (lowercase) in a string entered by the user. It is structured simply with functionalities for input and processing the string, allowing the user to visualize the frequency of letters in the text they enter. The main steps of the program are:
+
+Entering a string: The user is prompted to enter a text string.
+Counting occurrences: The program analyzes the entered string and counts how many times each letter of the alphabet appears in the text.
+Displaying results: For each letter that appears at least once, the program displays the number of occurrences.
+This program is divided into two main functions, which are orchestrated by the main method, ensuring a straightforward and comprehensible flow.
+
+Function: saisie()
+
+Description: This function captures the string entered by the user.
+
+![](captures/Exercice4/Ex4-saisie.png)
+
+Details:
+It displays a message asking the user to enter a string.
+It uses a Scanner to read the user's input from the console and returns this string for further processing in the program.
+
+Function: nbOccurence(String chaine)
+
+Description: This function counts and displays the number of occurrences of each letter of the alphabet (lowercase) in the entered string.
+
+![](captures/Exercice4/Ex4-nbOccurence.png)
+
+Details:
+An array nbOccurence of size 26 (for each letter of the alphabet) is used to store the number of appearances of each letter.
+The string is converted to a character array (charArray) to allow traversal.
+A double loop is used:
+The first loop iterates through each letter of the alphabet (from 'a' to 'z').
+The second loop iterates through each character of the string and compares whether the character is equal to the current letter in the first loop.
+For each letter found in the string, the program increments the corresponding counter in the nbOccurence array.
+If a letter appears at least once, the program displays the number of occurrences of that letter.
+
+Function: main(String[] args)
+
+Description: This is the main method of the program, orchestrating the execution of the different steps.
+
+![](captures/Exercice4/Ex4-main.png)
+
+Details:
+It calls the saisie() function to capture the string entered by the user.
+It passes this string to the nbOccurence() function to count and display the number of occurrences of each letter in the text.
+Execution:
+
 ![](captures/Exercice4/Ex4-exe.png)
