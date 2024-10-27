@@ -1,5 +1,7 @@
+# Projet bilingue
 **Compte rendu**
 
+## 🇫🇷 Français
 ***![](captures/Exercice1/Ex1-Ennoncé.png)***  
 *Introduction :*  
 Ce programme a pour objectif de permettre la gestion et l'affichage de notes d'étudiants. Il s'agit d'un ensemble de fonctions qui répond à plusieurs objectifs spécifiques :  
