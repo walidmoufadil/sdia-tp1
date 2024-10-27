@@ -13,6 +13,7 @@ Ce programme a pour objectif de permettre la gestion et l'affichage de notes d'�
 <li> Affichage de la note maximale et minimale : Le programme calcule et affiche les valeurs extrêmes (la plus haute et la plus basse note). </li>  
 <li> Calcul de la moyenne : Enfin, une fonction calcule et affiche la moyenne des notes saisies. </li>  
 </ul>
+
 Ces opérations sont réparties en différentes fonctions afin de rendre le code plus clair, modulaire et réutilisable.
 
 *Toutes ces fonctions sont ensuite réunies et appelées dans une fonction principale, qui orchestre l'exécution globale du programme. Cela permet de traiter chaque étape de manière distincte tout en les regroupant dans un processus cohérent.*
@@ -105,10 +106,12 @@ La fonction main permet l'exécution des fonctions citées ci-dessus et suivre l
 
 ***![](captures/Exercice2/Ex2-ennoncé.png)***  
 *Introduction* :  
-Ce programme a pour objectif de permettre la conjugaison automatique de verbes du premier groupe en français. Il est composé de plusieurs fonctions qui répondent à des objectifs spécifiques :  
-Saisie d'un verbe : L'utilisateur est invité à entrer un verbe du premier groupe (un verbe se terminant par "er").  
-Vérification du verbe : Le programme vérifie si le verbe saisi est bien un verbe du premier groupe en s'assurant qu'il se termine par "er".  
-Conjugaison du verbe : Si le verbe est valide, il est conjugué au présent de l'indicatif pour les différents pronoms personnels (Je, Tu, Il/Elle/On, Nous, Vous, Ils/Elles).  
+Ce programme a pour objectif de permettre la conjugaison automatique de verbes du premier groupe en français. Il est composé de plusieurs fonctions qui répondent à des objectifs spécifiques :
+<ul>
+<li> Saisie d'un verbe : L'utilisateur est invité à entrer un verbe du premier groupe (un verbe se terminant par "er").</li>  
+<li>Vérification du verbe : Le programme vérifie si le verbe saisi est bien un verbe du premier groupe en s'assurant qu'il se termine par "er".</li>  
+<li>Conjugaison du verbe : Si le verbe est valide, il est conjugué au présent de l'indicatif pour les différents pronoms personnels (Je, Tu, Il/Elle/On, Nous, Vous, Ils/Elles).</li>
+</ul>
 Ces opérations sont implémentées dans différentes fonctions, ce qui rend le code modulaire et facile à comprendre. La fonction principale main orchestre l'ensemble des étapes, assurant que le verbe est d'abord validé avant d'être conjugué et affiché. Ce découpage permet de traiter chaque partie du processus de manière distincte, tout en assurant une exécution cohérente et fluide du programme.
 
 **Fonction : saisieVerbe()**
@@ -167,13 +170,15 @@ Si la vérification est positive, elle appelle la méthode conjuguer() pour affi
 
 ***![](captures/Exercice3/Ex3-ennoncé.png)***
 
-***Introduction** :*
+***Introduction :**
 
-Ce programme a pour objectif de gérer des opérations diverses sur des chaînes de caractères saisies par l'utilisateur. Il permet d'interagir avec l'utilisateur via un menu et offre plusieurs fonctionnalités autour de la manipulation de chaînes, comme l'affichage, l'inversion, et le comptage des mots dans la chaîne. Il est conçu de manière modulaire, chaque fonctionnalité étant implémentée dans une fonction distincte, ce qui rend le code clair et maintenable. Les principales fonctionnalités sont :  
-Saisie d'une chaîne de caractères : L'utilisateur peut saisir une chaîne qui sera ensuite utilisée pour d'autres opérations.  
-Affichage de la chaîne : Une fois la chaîne saisie, elle peut être affichée en utilisant cette option.  
-Inversion de la chaîne : Le programme permet d'inverser la chaîne et d'afficher le résultat.  
-Comptage des mots : Le programme peut également compter et afficher le nombre de mots dans la chaîne saisie.  
+Ce programme a pour objectif de gérer des opérations diverses sur des chaînes de caractères saisies par l'utilisateur. Il permet d'interagir avec l'utilisateur via un menu et offre plusieurs fonctionnalités autour de la manipulation de chaînes, comme l'affichage, l'inversion, et le comptage des mots dans la chaîne. Il est conçu de manière modulaire, chaque fonctionnalité étant implémentée dans une fonction distincte, ce qui rend le code clair et maintenable. Les principales fonctionnalités sont :
+<ul>
+<li>Saisie d'une chaîne de caractères : L'utilisateur peut saisir une chaîne qui sera ensuite utilisée pour d'autres opérations.</li>  
+<li>Affichage de la chaîne : Une fois la chaîne saisie, elle peut être affichée en utilisant cette option.</li>  
+<li>Inversion de la chaîne : Le programme permet d'inverser la chaîne et d'afficher le résultat.</li>  
+<li>Comptage des mots : Le programme peut également compter et afficher le nombre de mots dans la chaîne saisie.</li>
+</ul>
 Ces opérations sont organisées autour d'un menu qui permet à l'utilisateur de choisir l'opération qu'il souhaite exécuter. La gestion de l'interaction utilisateur est fluide, et le programme revient toujours au menu après chaque opération jusqu'à ce que l'utilisateur décide de quitter.
 
 **Fonction: afficherMenu()**
@@ -242,25 +247,27 @@ Il gère également des messages d'erreur si l'utilisateur essaie d'utiliser une
 
 *Exécution* :
 
-![](captures/Exercice3/Ex3-exe1.png)  
-![](captures/Exercice3/Ex3-exe2.png)
-![](captures/Exercice3/Ex3-exe2.png)
+***![](captures/Exercice3/Ex3-exe1.png)***  
+***![](captures/Exercice3/Ex3-exe2.png)***
+***![](captures/Exercice3/Ex3-exe2.png)***
 
 
-![](captures/Exercice4/Ex4-ennoncé.png)  
-*Introduction* :  
+***![](captures/Exercice4/Ex4-ennoncé.png)***  
+**Introduction** :  
 Ce programme a pour objectif de compter et d'afficher le nombre d'occurrences de chaque lettre de l'alphabet (minuscules) dans une chaîne de caractères saisie par l'utilisateur. Il est structuré de manière simple avec des fonctionnalités de saisie et de traitement de la chaîne, permettant à l'utilisateur de visualiser la fréquence des lettres dans le texte qu'il entre. Les principales étapes du programme sont :
-
-*Saisie d'une chaîne de caractères* : L'utilisateur est invité à entrer une chaîne de texte.  
-*Comptage des occurrences* : Le programme analyse la chaîne saisie et compte combien de fois chaque lettre de l'alphabet apparaît dans le texte.  
-*Affichage des résultats* : Pour chaque lettre qui apparaît au moins une fois, le programme affiche le nombre d'occurrences.  
+<ul>
+<li>Saisie d'une chaîne de caractères : L'utilisateur est invité à entrer une chaîne de texte.</li>  
+<li>Comptage des occurrences : Le programme analyse la chaîne saisie et compte combien de fois chaque lettre de l'alphabet apparaît dans le texte.</li>  
+<li>Affichage des résultats : Pour chaque lettre qui apparaît au moins une fois, le programme affiche le nombre d'occurrences.</li>
+</ul>
 Ce programme est divisé en deux fonctions principales, qui sont orchestrées par la méthode main, garantissant un flux simple et compréhensible.
 
 **Fonction: saisie()**
 
-Description : Cette fonction permet de capturer la chaîne de caractères saisie par l'utilisateur.
+*Description :*
+Cette fonction permet de capturer la chaîne de caractères saisie par l'utilisateur.
 
-![](captures/Exercice4/Ex4-saisie.png)
+***![](captures/Exercice4/Ex4-saisie.png)***
 
 *Détails* :  
 Elle affiche un message demandant à l'utilisateur de saisir une chaîne.  
@@ -268,9 +275,10 @@ Elle utilise un Scanner pour lire l'entrée de l'utilisateur depuis la console e
 
 **Fonction nbOccurence(String chaine)**
 
-*Description* : Cette fonction compte et affiche le nombre d'occurrences de chaque lettre de l'alphabet (minuscules) dans la chaîne saisie.
+*Description* :
+Cette fonction compte et affiche le nombre d'occurrences de chaque lettre de l'alphabet (minuscules) dans la chaîne saisie.
 
-![](captures/Exercice4/Ex4-nbOccurence.png)
+***![](captures/Exercice4/Ex4-nbOccurence.png)***
 
 *Détails* :  
 Un tableau nbOccurence de taille 26 (pour chaque lettre de l'alphabet) est utilisé pour stocker le nombre d'apparitions de chaque lettre.  
@@ -283,15 +291,17 @@ Si une lettre apparaît au moins une fois, le programme affiche le nombre d'occu
 
 **Fonction main(String\[\] args)**
 
-Description : C'est la méthode principale du programme, qui orchestre l'exécution des différentes étapes.
+*Description :*
+C'est la méthode principale du programme, qui orchestre l'exécution des différentes étapes.
 
-![](captures/Exercice4/Ex4-main.png)
+***![](captures/Exercice4/Ex4-main.png)***
 
 *Détails* :  
 Elle appelle la fonction saisie() pour capturer la chaîne de caractères saisie par l'utilisateur.  
 Elle passe cette chaîne à la fonction nbOccurence() pour compter et afficher le nombre d'occurrences de chaque lettre dans le texte.  
 *Exécution* :  
-![](captures/Exercice4/Ex4-exe.png)
+
+***![](captures/Exercice4/Ex4-exe.png)***
 
 
 ## 🇬🇧 English ##
@@ -302,11 +312,13 @@ Elle passe cette chaîne à la fonction nbOccurence() pour compter et afficher l
 
 *Introduction:*
 This program aims to manage and display students' grades. It consists of a set of functions that meet several specific objectives:
-*Entering grades:* The user can enter a series of grades that will be stored in an array.
-*Sorting grades:* The entered grades are then sorted in ascending order to facilitate their analysis.
-*Displaying grades:* Once sorted, the grades are displayed on the screen for the user to review.
-*Displaying maximum and minimum grades:* The program calculates and displays the extreme values (the highest and lowest grades).
-*Calculating the average:* Finally, a function calculates and displays the average of the entered grades.
+<ul>
+<li>Entering grades: The user can enter a series of grades that will be stored in an array.</li>
+<li>Sorting grades: The entered grades are then sorted in ascending order to facilitate their analysis.</li>
+<li>Displaying grades: Once sorted, the grades are displayed on the screen for the user to review.</li>
+<li>Displaying maximum and minimum grades: The program calculates and displays the extreme values (the highest and lowest grades).</li>
+<li>Calculating the average: Finally, a function calculates and displays the average of the entered grades.</li>
+</ul>
 These operations are distributed across different functions to make the code clearer, modular, and reusable.
 
 All these functions are then gathered and called in a main function, which orchestrates the overall execution of the program. This allows each step to be handled separately while grouping them into a coherent process.
@@ -393,15 +405,17 @@ The main function executes the aforementioned functions and follows their sequen
 ***![](captures/Exercice1/main.png)***
 
 *Execution:*
-![](captures/Exercice1/Ex1-exe1.png)
-![](captures/Exercice1/Ex1-exe2.png)
+***![](captures/Exercice1/Ex1-exe1.png)***
+***![](captures/Exercice1/Ex1-exe2.png)***
 
 
 **Introduction:**
 This program aims to allow the automatic conjugation of first-group verbs in French. It consists of several functions that meet specific objectives:
-*Entering a verb:* The user is prompted to enter a first-group verb (a verb ending in "er").
-*Verifying the verb:* The program checks if the entered verb is indeed a first-group verb by ensuring it ends with "er".
-*Conjugating the verb:* If the verb is valid, it is conjugated in the present indicative for the different personal pronouns (Je, Tu, Il/Elle/On, Nous, Vous, Ils/Elles).
+<ul>
+<li>Entering a verb: The user is prompted to enter a first-group verb (a verb ending in "er").</li>
+<li>Verifying the verb: The program checks if the entered verb is indeed a first-group verb by ensuring it ends with "er".</li>
+<li>Conjugating the verb: If the verb is valid, it is conjugated in the present indicative for the different personal pronouns (Je, Tu, Il/Elle/On, Nous, Vous, Ils/Elles).</li>
+</ul>
 These operations are implemented in various functions, making the code modular and easy to understand. The main function orchestrates all the steps, ensuring that the verb is first validated before being conjugated and displayed. This breakdown allows each part of the process to be handled distinctly while ensuring a coherent and smooth execution of the program.
 
 **Function: saisieVerbe()**
@@ -416,7 +430,7 @@ It uses a Scanner to read the user's input from the console.
 It displays a message to the user asking them to enter a first-group verb.
 It returns the entered string (the verb).
 
-***Function: verifierverbe(String verbe)***
+**Function: verifierverbe(String verbe)**
 
 *Description:*
 This function checks if the entered verb is indeed a first-group verb, meaning it ends with "er".
@@ -428,7 +442,7 @@ It retrieves the length of the verb with verbe.length().
 It uses substring() to extract the last two letters of the verb and checks if they correspond to "er".
 If the verb ends with "er", it returns true; otherwise, it returns false.
 
-***Function: conjuguer(String verbe)***
+**Function: conjuguer(String verbe)**
 
 *Description:*
 This function conjugates the given verb in the present indicative for the six personal pronouns (Je, Tu, Il/Elle/On, Nous, Vous, Ils/Elles).
@@ -447,7 +461,7 @@ It concatenates this stem with the correct endings for each personal pronoun:
 
 It then displays the conjugation for each pronoun using System.out.println().
 
-***Function: main(String[] args)***
+**Function: main(String[] args)**
 
 *Description:*
 This is the main method that executes the program. It prompts the user to enter a first-group verb (ending in "er"), checks that it is indeed a first-group verb, and conjugates it if so.
@@ -465,10 +479,12 @@ If the verification is positive, it calls the method conjuguer() to display the 
 
 **Introduction:**
 This program aims to manage various operations on strings entered by the user. It allows interaction with the user through a menu and offers several functionalities around string manipulation, such as displaying, reversing, and counting the words in the string. It is designed modularly, with each functionality implemented in a distinct function, making the code clear and maintainable. The main functionalities are:
-*Entering a string:* The user can enter a string that will then be used for other operations.
-*Displaying the string:* Once the string is entered, it can be displayed using this option.
-*Reversing the string:* The program allows reversing the string and displaying the result.
-*Counting words:* The program can also count and display the number of words in the entered string.
+<ul>
+<li>Entering a string: The user can enter a string that will then be used for other operations.</li>
+<li>Displaying the string: Once the string is entered, it can be displayed using this option.</li>
+<li>Reversing the string: The program allows reversing the string and displaying the result.</li>
+<li>Counting words: The program can also count and display the number of words in the entered string.</li>
+</ul>
 These operations are organized around a menu that allows the user to choose the operation they wish to execute. User interaction management is smooth, and the program always returns to the menu after each operation until the user decides to exit.
 
 **Function: afficherMenu()**
@@ -546,11 +562,11 @@ It captures user input and calls the corresponding function based on the chosen 
 
 **Introduction:**
 This program aims to count and display the number of occurrences of each letter of the alphabet (lowercase) in a string entered by the user. It is structured simply with functionalities for input and processing the string, allowing the user to visualize the frequency of letters in the text they enter. The main steps of the program are:
-
-*Entering a string:* The user is prompted to enter a text string.
-*Counting occurrences:* The program analyzes the entered string and counts how many times each letter of the alphabet appears in the text.
-*Displaying results:* For each letter that appears at least once, the program displays the number of occurrences.
-
+<ul>
+<li>Entering a string: The user is prompted to enter a text string.</li>
+<li>Counting occurrences: The program analyzes the entered string and counts how many times each letter of the alphabet appears in the text.</li>
+<li>Displaying results: For each letter that appears at least once, the program displays the number of occurrences.</li>
+</ul>
 This program is divided into two main functions, which are orchestrated by the main method, ensuring a straightforward and comprehensible flow.
 
 **Function: saisie()**
@@ -592,4 +608,4 @@ It calls the saisie() function to capture the string entered by the user.
 It passes this string to the nbOccurence() function to count and display the number of occurrences of each letter in the text.
 *Execution:*
 
-![](captures/Exercice4/Ex4-exe.png)
+***![](captures/Exercice4/Ex4-exe.png)***
