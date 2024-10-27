@@ -2,7 +2,7 @@
 <h1>🇫🇷 Français</h1>
 
 
-<div style="font-style: italic"> Compte rendu </div>
+<h3> Compte rendu </h3>
 
 
 ***![](captures/Exercice1/Ex1-Ennoncé.png)***  
