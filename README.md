@@ -310,7 +310,7 @@ Elle passe cette chaîne à la fonction nbOccurence() pour compter et afficher l
 <h1> 🇪🇳  English </h1>
 
 
-<h2> Report </h2>
+<h3><i> Report </i></h3>
 
 
 *Introduction:*
