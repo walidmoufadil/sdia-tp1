@@ -1,6 +1,8 @@
 
+<h1>🇫🇷 Français</h1>
 
-<h2> 🇫🇷 Français Compte rendu </h2>
+
+<h2> Compte rendu </h2>
 
 
 ***![](captures/Exercice1/Ex1-Ennoncé.png)***  
@@ -304,10 +306,10 @@ Elle passe cette chaîne à la fonction nbOccurence() pour compter et afficher l
 ***![](captures/Exercice4/Ex4-exe.png)***
 
 
-## 🇪🇳  English ##
+<h1> 🇪🇳  English </h1>
 
 
-**Report**
+<h2> Report </h2>
 
 
 *Introduction:*
