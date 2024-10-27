@@ -304,7 +304,7 @@ Elle passe cette chaîne à la fonction nbOccurence() pour compter et afficher l
 ***![](captures/Exercice4/Ex4-exe.png)***
 
 
-## 🇬🇧 English ##
+## 🇪🇳  English ##
 
 
 **Report**
