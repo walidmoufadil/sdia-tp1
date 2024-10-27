@@ -1,6 +1,6 @@
-## 🇫🇷 Français
 
-<h2 color="red"> Compte rendu </h2>
+
+<h2> 🇫🇷 Français Compte rendu </h2>
 
 
 ***![](captures/Exercice1/Ex1-Ennoncé.png)***  
