@@ -7,13 +7,13 @@
 *Introduction :*  
 Ce programme a pour objectif de permettre la gestion et l'affichage de notes d'étudiants. Il s'agit d'un ensemble de fonctions qui répond à plusieurs objectifs spécifiques :
 <ul>
-<li> Saisie des notes* : </li> L'utilisateur peut entrer une série de notes qui seront stockées dans un tableau.  
-<li> Tri des notes </li> :  Les notes saisies sont ensuite triées en ordre croissant afin de faciliter leur analyse.  
-<li> Affichage des notes </li> : Une fois triées, les notes sont affichées à l'écran pour que l'utilisateur puisse les consulter.  
-<li> Affichage de la note maximale et minimale </li> : Le programme calcule et affiche les valeurs extrêmes (la plus haute et la plus basse note).  
-<li> Calcul de la moyenne </li> : Enfin, une fonction calcule et affiche la moyenne des notes saisies.  
+<li> Saisie des notes :  L'utilisateur peut entrer une série de notes qui seront stockées dans un tableau. </li>  
+<li> Tri des notes :  Les notes saisies sont ensuite triées en ordre croissant afin de faciliter leur analyse.  </li>
+<li> Affichage des notes : Une fois triées, les notes sont affichées à l'écran pour que l'utilisateur puisse les consulter. </li>  
+<li> Affichage de la note maximale et minimale : Le programme calcule et affiche les valeurs extrêmes (la plus haute et la plus basse note). </li>  
+<li> Calcul de la moyenne : Enfin, une fonction calcule et affiche la moyenne des notes saisies. </li>  
 </ul>
-Ces opérations sont réparties en différentes fonctions afin de rendre le code plus clair, modulaire et réutilisable. 
+Ces opérations sont réparties en différentes fonctions afin de rendre le code plus clair, modulaire et réutilisable.
 
 *Toutes ces fonctions sont ensuite réunies et appelées dans une fonction principale, qui orchestre l'exécution globale du programme. Cela permet de traiter chaque étape de manière distincte tout en les regroupant dans un processus cohérent.*
 
